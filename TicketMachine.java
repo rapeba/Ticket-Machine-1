@@ -17,6 +17,7 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+   
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -29,7 +30,17 @@ public class TicketMachine
         balance = 0;
         total = 0;
     }
-
+    
+     /**
+     * Parámetro para fijar el precio.
+     */
+    public void TicketMachine(int cost)
+    {
+        price = cost;
+        balance = 0;
+        total = 0;
+    }
+    
     /**
      * Return the price of a ticket.
      */
@@ -96,6 +107,6 @@ public class TicketMachine
      
    public void showPrice()
    {
-       System.out.println("The price of a ticket is "+ price +" cents");
+       System.out.println("The price of a ticket is " + price + " cents");
     }
 }
