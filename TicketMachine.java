@@ -89,5 +89,13 @@ public class TicketMachine
    price=precioDelBillete;
    }
    
-       
+   public void prompt()
+   {
+    System.out.println("Please, insert the corret amount of money");
+   }
+     
+   public void showPrice()
+   {
+       System.out.println("The price of a ticket is "+ price +" cents");
+    }
 }
